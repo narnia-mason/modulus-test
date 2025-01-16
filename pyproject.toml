@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "modulus-test"
+version = "0.1.0"
+description = ""
+authors = ["Mason Seo <mason.seo@narnia.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+
+[tool.poetry.dependencies]
+post-install = "scripts.install:main"
+
+[virtualenvs]
+create = true
+in-project = true
+path = ".venv"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
